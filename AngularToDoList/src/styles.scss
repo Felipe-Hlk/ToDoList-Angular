@@ -1,0 +1,33 @@
+@import "./dist/scss/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Pacifico&family=Roboto:wght@300;400;700;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  font-weight: 400;
+}
+
+body{
+  background: linear-gradient(0deg, rgb(196, 196, 196) 10%, rgb(7, 108, 101) 40%, rgb(0, 22, 19) 80%) fixed;
+  background: url(../src/assets/img/hawaii.jpg) center;
+
+}
+
+ul{
+  list-style: none;
+}
+
+textarea:focus, input:focus, button{
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+//Classes
+.container{
+  width: 350px;
+  margin: 50px auto;
+}

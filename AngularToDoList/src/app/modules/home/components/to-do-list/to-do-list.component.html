@@ -1,0 +1,23 @@
+
+<section [ngClass]="{'loading': !taskList.length} ">
+
+  <ul *ngIf="taskList.length" >
+
+    <li *ngFor="let item of taskList; let i = index" >
+      <!-- <input type="checkbox" [(ngModel)]="item.checked">
+      <input type="text" [(ngModel)]="item.task" > -->
+      <input type="checkbox" [(ngModel)]="item.checked">
+      <input type="text" (keyup) = "validationInput(item.task, i)" [(ngModel)]="item.task" [ngClass] = "{'checked': item.checked }" >
+
+      <button (click)="deleteButton(i)" >
+        <img src="assets/icons/rubbish-bin.png" width="10px" alt="">
+      </button>
+    </li>
+
+  </ul>
+</section>
+
+<app-input-add-itens (emitTaskList) = "setEmitTaskList($event)" ></app-input-add-itens>
+<app-button-delete-all *ngIf="taskList.length" (click)="deleteAll()"></app-button-delete-all>
+
+
