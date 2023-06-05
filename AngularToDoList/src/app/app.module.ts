@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 //Modules
 import { HomeModule } from './modules/home/home.module';
 import { FormsModule } from '@angular/forms';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
     
   ],
   imports: [
