@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { FormsModule } from '@angular/forms';
 import { NavComponent } from './nav/nav.component';
+import { DateTimeFormatPipe } from './date-time-format.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    DateTimeFormatPipe
     
   ],
   imports: [
